@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react"
+    },
+    "files": [
+        "./typings/index.d.ts",
+        "./src/components/Hello.tsx",
+        "./src/index.tsx"
+    ],
+  "globalDependencies": {
+    "react": "registry:dt/react#0.14.0+20160526134601",
+    "react-dom": "registry:dt/react-dom#0.14.0+20160412154040"
+  }
+}

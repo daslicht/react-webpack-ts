@@ -4,15 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "tsc -w",
+    "webpack": "webpack -w",
+    "server": "node server.js",
+    "dev": "npm run tsc  &   npm run webpack  &   npm run server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5",
     "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "webpack": "^1.13.1"
   },
   "devDependencies": {
+    "forever": "^0.15.2",
     "source-map-loader": "^0.1.5",
     "ts-loader": "^0.8.2"
   }
